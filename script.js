@@ -22,3 +22,30 @@ steps.forEach(step => {
     detail.textContent = step.dataset.detail;
   });
 });
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightbox-image');
+const lightboxClose = document.querySelector('.lightbox-close');
+
+function closeLightbox() {
+  lightbox.hidden = true;
+  lightboxImage.removeAttribute('src');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.image-button').forEach(button => {
+  button.addEventListener('click', () => {
+    lightboxImage.src = button.dataset.full;
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
+    lightboxClose.focus();
+  });
+});
+
+lightboxClose?.addEventListener('click', closeLightbox);
+lightbox?.addEventListener('click', event => {
+  if (event.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !lightbox.hidden) closeLightbox();
+});
