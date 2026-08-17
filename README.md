@@ -1,22 +1,20 @@
-# Project JG
+# Joe Galotti's Portfolio — GitHub Pages
 
-Interactive career portfolio for Joe Galotti.
+This folder contains the latest static version of Joe Galotti's portfolio.
 
-## Publish on GitHub Pages
+## Upload to GitHub
 
-1. Upload `index.html`, `styles.css`, `script.js`, `README.md`, and the entire `assets` folder to the root of the GitHub repository.
-2. In the repository, open **Settings → Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Select the `main` branch and `/ (root)` folder, then save.
+Upload the contents of this folder to the root of the existing repository, replacing files with the same names.
 
-## Updating the site
+Required top-level files/folders:
+- `index.html`
+- `styles.css`
+- `script.js`
+- `README.md`
+- `assets/`
 
-Replace the edited files in the repository and commit the changes. GitHub Pages will republish the updated version automatically.
+GitHub Pages should continue to publish from the `main` branch and `/(root)`.
 
-## Privacy note
-
-The internal work-sample screenshots included here were cropped or redacted to remove temporary preview URLs, customer contact data, internal file links, and other unnecessary private information before public use.
-
-
-## v4 update
-Added the My Background narrative to the Overview section, including the journalism-to-marketing career progression and “marketing utility man” positioning.
+## Latest additions
+- Curated YouTube playlist links for The Legal Intake Experts, Everything Except The Law, and The Earley Show.
+- Two live AI Intake Chatbot product demos organized as part of the product-promotion campaign.
